@@ -1,0 +1,12 @@
+kind: Simple
+apiVersion: k3d.io/v1alpha4
+metadata:
+  name: hub
+
+ports:
+- port: 19080:80
+  nodeFilters:
+  - loadbalancer
+- port: 19443:443
+  nodeFilters:
+  - loadbalancer
