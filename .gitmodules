@@ -1,0 +1,3 @@
+[submodule "clusters/edge/assets/edgex"]
+	path = clusters/edge/assets/edgex
+	url = git@github.com:satokitty/edgex-examples.git
