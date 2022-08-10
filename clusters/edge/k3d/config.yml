@@ -6,6 +6,8 @@ metadata:
 servers: 1
 agents: 2
 
+network: k3d-edge
+
 ports:
 - port: 18080:80
   nodeFilters:

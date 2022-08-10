@@ -3,6 +3,8 @@ apiVersion: k3d.io/v1alpha4
 metadata:
   name: hub
 
+network: k3d-edge
+
 ports:
 - port: 19080:80
   nodeFilters:
