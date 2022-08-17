@@ -3,12 +3,13 @@ apiVersion: k3d.io/v1alpha4
 metadata:
   name: hub
 
-network: k3d-edge
+kubeAPI:
+  hostPort: "18043"
 
 ports:
-- port: 19080:80
+- port: 18080:80
   nodeFilters:
   - loadbalancer
-- port: 19443:443
+- port: 18443:443
   nodeFilters:
   - loadbalancer
